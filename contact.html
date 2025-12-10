@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
+    
     <header class="site-header">
         <div class="header-container">
             <a href="index.html" class="site-logo">
@@ -26,9 +26,9 @@
         </div>
     </header>
 
-    <!-- Contact Container -->
+    
     <div class="contact-container">
-        <!-- Introduction -->
+        
         <div class="contact-intro">
             <h1>Share Your Story</h1>
             <p>
@@ -42,7 +42,7 @@
             </p>
         </div>
 
-        <!-- Contact Form -->
+        
         <form class="contact-form" id="storyForm">
             <div class="form-group">
                 <label for="name">
@@ -137,7 +137,7 @@ Remember: vulnerability takes courage, and your courage matters."
             </p>
         </form>
 
-        <!-- Additional Information -->
+        
         <div class="about-section mt-xl">
             <h2>What happens after you submit?</h2>
             <div class="values-grid">
@@ -160,7 +160,7 @@ Remember: vulnerability takes courage, and your courage matters."
             </div>
         </div>
 
-        <!-- Alternative Contact Methods -->
+        
         <div class="about-section">
             <h2>Not ready to share your story yet?</h2>
             <p>
@@ -176,7 +176,7 @@ Remember: vulnerability takes courage, and your courage matters."
         </div>
     </div>
 
-    <!-- Footer -->
+    
     <footer class="site-footer">
         <div class="footer-content">
             <p class="footer-tagline">Every voice deserves to be heard.</p>
@@ -189,26 +189,22 @@ Remember: vulnerability takes courage, and your courage matters."
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 Shared Stories. A student project exploring empathy through design.</p>
-            </div>
         </div>
     </footer>
 
-    <!-- Simple Form Validation -->
+    
     <script>
         document.getElementById('storyForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Simple validation feedback
+            
             const email = document.getElementById('email').value;
             const story = document.getElementById('story').value;
             const title = document.getElementById('title').value;
             
             if (email && story && title) {
                 alert('Thank you for sharing your story! 💛\n\nIn a real implementation, your story would be sent for review. For this demo, your submission has been received.\n\nWe\'ll be in touch soon via ' + email);
-                // In production, this would send data to a server
+                
                 this.reset();
             }
         });
