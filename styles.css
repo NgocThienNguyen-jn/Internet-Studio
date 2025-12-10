@@ -1,7 +1,6 @@
  
 
 :root {
-  /* Fluid Type Scale (320px - 1240px viewport) */
   --step--2: clamp(0.69rem, calc(0.66rem + 0.18vw), 0.80rem);
   --step--1: clamp(0.83rem, calc(0.78rem + 0.29vw), 1.00rem);
   --step-0: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
