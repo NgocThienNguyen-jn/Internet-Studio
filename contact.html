@@ -1,24 +1,217 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Please Change the Title for Full Credit</title>
-
-  <!-- Add the description of your site below -->
-  <meta name="description" content="This is the description.">
-  <!-- Add your name in the author section -->
-  <meta name="author" content="Author Webmaster">
-
-<!-- Don't forget to add the stylesheet link here!! -->
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Story - Shared Stories</title>
+    <meta name="description" content="Share your authentic life story in a safe, supportive space. Your voice matters, and your experience could resonate with someone who needs to hear it.">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    
-  <!-- Place your html tags here -->
-    
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="site-logo">
+                <span class="logo-icon">✨</span>
+                <span>Shared Stories</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Stories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Share Your Story</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Container -->
+    <div class="contact-container">
+        <!-- Introduction -->
+        <div class="contact-intro">
+            <h1>Share Your Story</h1>
+            <p>
+                Your experience matters. Whether it's a moment of change, a lesson learned, an unexpected joy, 
+                or a first time—your story has the power to connect, inspire, and remind others they're not alone.
+            </p>
+            <p class="gentle-reminder">
+                💫 <strong>Take a breath. Begin when you're ready.</strong> This is a safe space. You can share 
+                anonymously, and we'll review all submissions with care and respect before publishing. Your 
+                privacy and emotional safety are our priorities.
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="storyForm">
+            <div class="form-group">
+                <label for="name">
+                    Name <span class="optional-label">(optional - you can remain anonymous)</span>
+                </label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="How would you like to be known? Or leave blank for 'Anonymous'"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">
+                    Email Address
+                </label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    placeholder="your@email.com"
+                >
+                <small style="font-size: var(--step--2); color: var(--color-soft-gray); display: block; margin-top: var(--space-xs);">
+                    We'll only use this to follow up if needed. We won't share it publicly or send unsolicited emails.
+                </small>
+            </div>
+
+            <div class="form-group">
+                <label for="category">
+                    Story Category
+                </label>
+                <select id="category" name="category" required>
+                    <option value="">Choose the category that fits best...</option>
+                    <option value="moments-of-change">Moments of Change</option>
+                    <option value="lessons-learned">Lessons Learned</option>
+                    <option value="unexpected-joys">Unexpected Joys</option>
+                    <option value="first-times">First Times</option>
+                    <option value="other">Something Else</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="title">
+                    Story Title
+                </label>
+                <input 
+                    type="text" 
+                    id="title" 
+                    name="title" 
+                    required 
+                    placeholder="Give your story a title..."
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="story">
+                    Your Story
+                </label>
+                <textarea 
+                    id="story" 
+                    name="story" 
+                    required 
+                    placeholder="Take your time. Write what feels true. There's no word limit, no judgment—just space for your authentic experience.
+
+You might start with:
+• A specific moment that stays with you
+• What led up to it
+• How it felt
+• What it taught you
+• Where you are now
+
+Remember: vulnerability takes courage, and your courage matters."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" required style="width: auto; margin-right: var(--space-xs);">
+                    I understand that my story will be reviewed before publication, and that the Shared Stories 
+                    team may make minor edits for clarity or length. I can request changes or removal at any time.
+                </label>
+            </div>
+
+            <button type="submit" class="submit-button">
+                Submit Your Story
+            </button>
+
+            <p style="text-align: center; margin-top: var(--space-md); font-size: var(--step--1); color: var(--color-soft-gray);">
+                Thank you for trusting us with your story. 💛
+            </p>
+        </form>
+
+        <!-- Additional Information -->
+        <div class="about-section mt-xl">
+            <h2>What happens after you submit?</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>1. Review</h3>
+                    <p>We'll carefully read your story to ensure it aligns with our community values of respect and authenticity.</p>
+                </div>
+                <div class="value-card">
+                    <h3>2. Contact</h3>
+                    <p>We may reach out via email if we have questions or suggestions for minor edits.</p>
+                </div>
+                <div class="value-card">
+                    <h3>3. Publication</h3>
+                    <p>Once approved, your story will be shared on our platform for others to discover and connect with.</p>
+                </div>
+                <div class="value-card">
+                    <h3>4. Your Control</h3>
+                    <p>You can request changes or removal of your story at any time by contacting us.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alternative Contact Methods -->
+        <div class="about-section">
+            <h2>Not ready to share your story yet?</h2>
+            <p>
+                That's completely okay. You can also reach out with questions, feedback, or just to say hello. 
+                We're here to listen.
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:stories@sharedstories.com">stories@sharedstories.com</a>
+            </p>
+            <p style="font-size: var(--step--1); color: var(--color-soft-gray); font-style: italic;">
+                Note: This is a student design project. The email above is conceptual for demonstration purposes.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="footer-tagline">Every voice deserves to be heard.</p>
+            
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Stories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shared Stories. A student project exploring empathy through design.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple Form Validation -->
+    <script>
+        document.getElementById('storyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple validation feedback
+            const email = document.getElementById('email').value;
+            const story = document.getElementById('story').value;
+            const title = document.getElementById('title').value;
+            
+            if (email && story && title) {
+                alert('Thank you for sharing your story! 💛\n\nIn a real implementation, your story would be sent for review. For this demo, your submission has been received.\n\nWe\'ll be in touch soon via ' + email);
+                // In production, this would send data to a server
+                this.reset();
+            }
+        });
+    </script>
 </body>
 </html>
