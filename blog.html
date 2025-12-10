@@ -1,24 +1,286 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Please Change the Title for Full Credit</title>
-
-  <!-- Add the description of your site below -->
-  <meta name="description" content="This is the description.">
-  <!-- Add your name in the author section -->
-  <meta name="author" content="Author Webmaster">
-
-<!-- Don't forget to add the stylesheet link here!! -->
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Stories - Shared Stories</title>
+    <meta name="description" content="Browse authentic life stories shared by real people. Filter by mood and category to find stories that resonate with you.">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    
-  <!-- Place your html tags here -->
-    
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="site-logo">
+                <span class="logo-icon">✨</span>
+                <span>Shared Stories</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html" class="active">Stories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Share Your Story</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Container -->
+    <div class="blog-container">
+        <!-- Main Content -->
+        <main class="blog-main">
+            <div class="blog-header">
+                <h1>Explore Our Shared Moments</h1>
+                <p class="section-subtitle">Authentic stories from real people, shared with care</p>
+            </div>
+
+            <!-- Search and Filter Bar -->
+            <div class="search-filter-bar">
+                <input type="search" class="search-input" placeholder="Search stories by keyword..." id="searchInput">
+                
+                <div class="filter-tags">
+                    <button class="tag-button active" data-category="all">All</button>
+                    <button class="tag-button" data-category="change">Moments of Change</button>
+                    <button class="tag-button" data-category="lessons">Lessons Learned</button>
+                    <button class="tag-button" data-category="joy">Unexpected Joys</button>
+                    <button class="tag-button" data-category="first">First Times</button>
+                </div>
+            </div>
+
+            <!-- Stories Grid -->
+            <div class="stories-grid">
+                <!-- Story Card 1 -->
+                <article class="story-card" data-category="change">
+                    <div class="story-image" style="background: linear-gradient(135deg, #f9d77e, #e89f8d);"></div>
+                    <div class="story-content">
+                        <div>
+                            <div class="story-meta">
+                                <span class="mood-badge mood-courage">💪 Courage</span>
+                                <span class="story-date">December 5, 2024</span>
+                            </div>
+                            <h3>The Day I Quit My Corporate Job</h3>
+                            <p class="story-excerpt">
+                                I remember my hands shaking as I typed the resignation email. Six years at the same desk, 
+                                the same routine. But something inside me had shifted, quietly, over months of 
+                                questioning what I really wanted from life...
+                            </p>
+                        </div>
+                        <a href="article.html" class="read-more">Read the full story →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 2 -->
+                <article class="story-card" data-category="joy">
+                    <div class="story-image" style="background: linear-gradient(135deg, #b4d4a3, #7a9d9f);"></div>
+                    <div class="story-content">
+                        <div>
+                            <div class="story-meta">
+                                <span class="mood-badge mood-joy">😊 Joy</span>
+                                <span class="story-date">December 3, 2024</span>
+                            </div>
+                            <h3>Dancing in the Rain at 3 AM</h3>
+                            <p class="story-excerpt">
+                                It wasn't planned. My friend and I were walking home when the rain started—not a drizzle, 
+                                but one of those sudden downpours that soaks you instantly. Instead of running for cover, 
+                                we just... laughed...
+                            </p>
+                        </div>
+                        <a href="article.html" class="read-more">Read the full story →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 3 -->
+                <article class="story-card" data-category="lessons">
+                    <div class="story-image" style="background: linear-gradient(135deg, #a8b5d1, #c8a5d1);"></div>
+                    <div class="story-content">
+                        <div>
+                            <div class="story-meta">
+                                <span class="mood-badge mood-reflection">🤔 Reflection</span>
+                                <span class="story-date">November 28, 2024</span>
+                            </div>
+                            <h3>What My Grandmother Taught Me About Forgiveness</h3>
+                            <p class="story-excerpt">
+                                She never called it forgiveness. She'd say, "Holding onto anger is like drinking poison 
+                                and expecting the other person to get sick." I didn't understand that wisdom until much later, 
+                                when I faced my own choice to let go...
+                            </p>
+                        </div>
+                        <a href="article.html" class="read-more">Read the full story →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 4 -->
+                <article class="story-card" data-category="first">
+                    <div class="story-image" style="background: linear-gradient(135deg, #c8a5d1, #f9d77e);"></div>
+                    <div class="story-content">
+                        <div>
+                            <div class="story-meta">
+                                <span class="mood-badge mood-surprise">🎉 Surprise</span>
+                                <span class="story-date">November 25, 2024</span>
+                            </div>
+                            <h3>My First Time Living Alone</h3>
+                            <p class="story-excerpt">
+                                Moving day was chaos—boxes everywhere, furniture that didn't fit, a broken curtain rod. 
+                                But that first night, sitting on my floor eating takeout, I felt something unexpected: 
+                                not loneliness, but possibility...
+                            </p>
+                        </div>
+                        <a href="article.html" class="read-more">Read the full story →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 5 -->
+                <article class="story-card" data-category="change">
+                    <div class="story-image" style="background: linear-gradient(135deg, #e89f8d, #b4d4a3);"></div>
+                    <div class="story-content">
+                        <div>
+                            <div class="story-meta">
+                                <span class="mood-badge mood-gratitude">🙏 Gratitude</span>
+                                <span class="story-date">November 20, 2024</span>
+                            </div>
+                            <h3>The Stranger Who Changed My Perspective</h3>
+                            <p class="story-excerpt">
+                                I was having the worst day—missed the bus, spilled coffee, lost my wallet. Then this 
+                                elderly man at the café, noticing my distress, simply said, "Tomorrow's a new canvas." 
+                                Such simple words, but they shifted everything...
+                            </p>
+                        </div>
+                        <a href="article.html" class="read-more">Read the full story →</a>
+                    </div>
+                </article>
+
+                <!-- Story Card 6 -->
+                <article class="story-card" data-category="lessons">
+                    <div class="story-image" style="background: linear-gradient(135deg, #7a9d9f, #a8b5d1);"></div>
+                    <div class="story-content">
+                        <div>
+                            <div class="story-meta">
+                                <span class="mood-badge mood-reflection">🤔 Reflection</span>
+                                <span class="story-date">November 15, 2024</span>
+                            </div>
+                            <h3>Learning to Say No Without Guilt</h3>
+                            <p class="story-excerpt">
+                                For years, I was the "yes person." Every favor, every request, every invitation—I said yes, 
+                                even when I was exhausted. It took burning out completely to realize that saying no isn't selfish; 
+                                it's self-preservation...
+                            </p>
+                        </div>
+                        <a href="article.html" class="read-more">Read the full story →</a>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+            <!-- Featured Stories Widget -->
+            <div class="sidebar-widget">
+                <h3>Featured This Week</h3>
+                
+                <div class="featured-story">
+                    <h4>The Courage to Start Over</h4>
+                    <p>A story about rebuilding after loss</p>
+                </div>
+
+                <div class="featured-story">
+                    <h4>Small Moments, Big Impact</h4>
+                    <p>How a five-minute conversation changed everything</p>
+                </div>
+
+                <div class="featured-story">
+                    <h4>Finding Home in Unexpected Places</h4>
+                    <p>A journey of belonging and discovery</p>
+                </div>
+            </div>
+
+            <!-- Reflection Prompt Widget -->
+            <div class="sidebar-widget">
+                <h3>Today's Reflection</h3>
+                <p class="reflection-prompt">
+                    "What's one moment from your past that still teaches you something today?"
+                </p>
+            </div>
+
+            <!-- Random Story Widget -->
+            <div class="sidebar-widget">
+                <h3>Discover Something New</h3>
+                <button class="shuffle-button" id="shuffleButton">
+                    <span>🎲</span>
+                    <span>Surprise Me</span>
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="footer-tagline">Every voice deserves to be heard.</p>
+            
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Stories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shared Stories. A student project exploring empathy through design.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for Filtering and Shuffle -->
+    <script>
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.tag-button');
+        const storyCards = document.querySelectorAll('.story-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const category = button.dataset.category;
+
+                // Filter stories
+                storyCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'grid';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Shuffle button - redirects to a random story
+        const shuffleButton = document.getElementById('shuffleButton');
+        shuffleButton.addEventListener('click', () => {
+            // In a real implementation, this would randomly select from available stories
+            window.location.href = 'article.html';
+        });
+
+        // Simple search functionality
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            storyCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const excerpt = card.querySelector('.story-excerpt').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+                    card.style.display = 'grid';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
