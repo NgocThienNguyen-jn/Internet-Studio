@@ -1,6 +1,4 @@
-/* ===================================
-   FLUID TYPE SCALE & CSS VARIABLES
-   =================================== */
+ 
 
 :root {
   /* Fluid Type Scale (320px - 1240px viewport) */
@@ -13,7 +11,7 @@
   --step-4: clamp(2.07rem, calc(1.73rem + 1.70vw), 3.05rem);
   --step-5: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
 
-  /* Color Palette - Warm & Soft */
+  
   --color-cream: #faf7f2;
   --color-peach: #f4e4d7;
   --color-terracotta: #d4a59a;
@@ -24,14 +22,14 @@
   --color-accent-warm: #c97b63;
   --color-accent-cool: #7a9d9f;
   
-  /* Mood Colors */
+  
   --mood-joy: #f9d77e;
   --mood-reflection: #a8b5d1;
   --mood-courage: #e89f8d;
   --mood-surprise: #c8a5d1;
   --mood-gratitude: #b4d4a3;
 
-  /* Spacing */
+  
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
@@ -39,26 +37,23 @@
   --space-xl: 4rem;
   --space-2xl: 6rem;
 
-  /* Layout */
+  
   --max-width: 1200px;
   --content-width: 720px;
   --border-radius: 12px;
   --border-radius-sm: 8px;
 
-  /* Shadows */
+  
   --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.06);
   --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.08);
   --shadow-hover: 0 6px 30px rgba(0, 0, 0, 0.12);
 
-  /* Transitions */
+  
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ===================================
-   GOOGLE WEBFONTS (via Helper)
-   =================================== */
 
-/* Lora - Serif for headings */
+
 @font-face {
   font-family: 'Lora';
   font-style: normal;
@@ -83,7 +78,7 @@
   src: url('../fonts/lora-v32-latin-italic.woff2') format('woff2');
 }
 
-/* Open Sans - Body text */
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -100,9 +95,6 @@
   src: url('../fonts/open-sans-v40-latin-600.woff2') format('woff2');
 }
 
-/* ===================================
-   RESET & BASE STYLES
-   =================================== */
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -164,9 +156,6 @@ button {
   cursor: pointer;
 }
 
-/* ===================================
-   HEADER & NAVIGATION
-   =================================== */
 
 .site-header {
   background-color: rgba(250, 247, 242, 0.95);
@@ -224,9 +213,6 @@ button {
   color: var(--color-forest);
 }
 
-/* ===================================
-   HERO SECTION
-   =================================== */
 
 .hero {
   padding: var(--space-2xl) var(--space-md) var(--space-xl);
@@ -277,9 +263,6 @@ button {
   transform: translateY(-2px);
 }
 
-/* ===================================
-   STORY CATEGORIES PREVIEW
-   =================================== */
 
 .categories-preview {
   padding: var(--space-xl) var(--space-md);
@@ -354,15 +337,12 @@ button {
   margin-bottom: 0;
 }
 
-/* Category-specific colors */
+
 .category-card:nth-child(1) { --category-color: var(--mood-joy); }
 .category-card:nth-child(2) { --category-color: var(--mood-reflection); }
 .category-card:nth-child(3) { --category-color: var(--mood-courage); }
 .category-card:nth-child(4) { --category-color: var(--mood-surprise); }
 
-/* ===================================
-   BLOG PAGE (STORY LISTING)
-   =================================== */
 
 .blog-container {
   max-width: var(--max-width);
@@ -517,7 +497,7 @@ button {
   gap: var(--space-sm);
 }
 
-/* Blog Sidebar */
+
 .blog-sidebar {
   position: sticky;
   top: calc(var(--space-xl) + 60px);
@@ -585,9 +565,6 @@ button {
   transform: scale(1.02);
 }
 
-/* ===================================
-   ARTICLE PAGE (SINGLE STORY)
-   =================================== */
 
 .article-container {
   max-width: var(--content-width);
@@ -701,9 +678,6 @@ button {
   font-weight: 600;
 }
 
-/* ===================================
-   CONTACT PAGE
-   =================================== */
 
 .contact-container {
   max-width: var(--content-width);
@@ -804,9 +778,6 @@ button {
   transform: translateY(-2px);
 }
 
-/* ===================================
-   ABOUT PAGE
-   =================================== */
 
 .about-container {
   max-width: var(--content-width);
@@ -872,9 +843,6 @@ button {
   font-style: italic;
 }
 
-/* ===================================
-   FOOTER
-   =================================== */
 
 .site-footer {
   background-color: var(--color-forest);
@@ -925,9 +893,6 @@ button {
   color: var(--color-peach);
 }
 
-/* ===================================
-   RESPONSIVE DESIGN
-   =================================== */
 
 @media (max-width: 900px) {
   .blog-container {
@@ -985,9 +950,6 @@ button {
   }
 }
 
-/* ===================================
-   UTILITY CLASSES
-   =================================== */
 
 .text-center {
   text-align: center;
@@ -1001,7 +963,7 @@ button {
   margin-top: var(--space-xl);
 }
 
-/* Mood-specific utilities */
+
 .mood-joy { --mood-color: var(--mood-joy); }
 .mood-reflection { --mood-color: var(--mood-reflection); }
 .mood-courage { --mood-color: var(--mood-courage); }
