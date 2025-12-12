@@ -58,7 +58,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/lora-v32-latin-regular.woff2') format('woff2');
+  src: url('../fonts/lora-v37-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -66,7 +66,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('../fonts/lora-v32-latin-600.woff2') format('woff2');
+  src: url('../fonts/lora-v37-latin-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -74,7 +74,7 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/lora-v32-latin-italic.woff2') format('woff2');
+  src: url('../fonts/lora-v37-latin-italic.woff2') format('woff2');
 }
 
 
@@ -83,7 +83,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+  src: url('../fonts/open-sans-v44-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -91,7 +91,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('../fonts/open-sans-v40-latin-600.woff2') format('woff2');
+  src: url('../fonts/open-sans-v44-latin-600.woff2') format('woff2');
 }
 
 
